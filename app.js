@@ -223,7 +223,7 @@ function mostrarResultados() {
     // pregunta.innerHTML = `<h2>Acertaste ${puntaje} de ${preguntas.length} preguntas.</h2>`;
     if(puntaje === preguntas.length && puntaje >= 18) {
         pregunta.innerHTML = `<h2>Acertaste ${puntaje} de ${preguntas.length} preguntas, vas a ser un gran conductor/a!</h2>`;
-    } else if (puntaje < 18 && puntaje > 15) {
+    } else if (puntaje < 18 && puntaje >= 15) {
         pregunta.innerHTML = `<h2>Acertaste ${puntaje} de ${preguntas.length} preguntas, hace falta practicar un poquito más.</h2>`;
     } else if (puntaje < 15) {
         pregunta.innerHTML = `<h2>Acertaste ${puntaje} de ${preguntas.length} preguntas, leé con atención la <a href="https://documentos.cordoba.gob.ar/MUNCBA/AreasGob/Mov/Manual-del-buen-conductorV3.pdf" target="_blank">Guía del Buen Conductor</a>.</h2>`;
